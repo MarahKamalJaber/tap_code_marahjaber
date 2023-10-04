@@ -1,0 +1,325 @@
+/* style.css */
+
+/* Global Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  color: #008AAA;
+}
+
+/* Header Styles */
+header {
+  background-color: white;
+  color: black;
+  width: 100%;
+  padding: 20px 0;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  gap: 2.3rem
+}
+
+nav li a {
+  font-weight: 300;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+}
+
+.active {
+  color: #D1884F;
+}
+
+nav li a:hover {
+  color: #D1884F;
+}
+
+/* Section Styles */
+section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+section h2 {
+  color: #008AAA;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #D1884F;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  position: relative;
+}
+
+/* Container Styles */
+.container {
+  display: block;
+  margin: auto;
+  width: 1200px;
+}
+
+.inner {
+  display: flex;
+  justify-content: center;
+}
+
+
+/* Content Styles */
+.inner .content {
+  margin: 0 auto;
+}
+
+.content p {
+  margin: 35px 0;
+  margin-bottom: 45px;
+}
+
+.content p.w-80 {
+  width: 80%;
+}
+
+.text-p {
+  margin-top: 20px;
+  font-size: 20px;
+  color: #92e3f5;
+}
+
+.text-PP {
+  font-weight: bold;
+  font-size: 38px;
+  margin-top: 35px;
+  line-height: 1.2;
+}
+
+p {
+  color:black;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.see-more-link {
+  color: #55afc4;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Image Styles */
+.inner .image-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.image {
+  border-radius: 0 0 0 50%;
+  height: 325px;
+  display: block;
+  box-shadow: -18px 9px 0px rgb(0, 138, 170,0.4);
+  margin-right: 50px;
+}
+
+.image img {
+  width: 305px;
+  border-radius: 0 0 0 48%;
+  height: 340px;
+  display: flex;
+  position: relative;
+  top: -5px;
+}
+
+
+.additional-content {
+  display: none;
+}
+
+
+.btns {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.btns .lft,
+.rt {
+  margin-right: 10px;
+  padding: 5px 30px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.btns .lft {
+  background-color: #008AAA;
+  box-shadow: 0px 4px 0px #b7ebf7;
+  color: white;
+  font-size: 20px;
+}
+
+.btns .rt {
+  background-color: white;
+  box-shadow:  0px 1px 2px #008AAA;
+  color: #008AAA;
+  border: 1px solid #008AAA;
+  font-size: 20px;
+}
+
+.btns .rt:hover {
+  background-color: #008AAA;
+  box-shadow: 0px 4px 0px #b7ebf7;
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* mobile */
+@media (max-width: 767px) {
+  nav {
+    padding: 0 20px;
+  }
+
+  nav ul {
+      width: 100%;
+      justify-content: space-between;
+  }
+
+  header {
+      padding: 10px 0;
+  }
+
+  .container {
+    width: 90%;
+  }
+
+  .inner {
+    flex-direction: column;
+    gap: 10rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .inner .content {
+    text-align: center;
+    margin-top: 60px;
+    width: 100%;
+  }
+
+  .inner .image-container {
+    display: flex;
+    justify-content: center;
+    height: 80vh;
+  }
+
+  .image {
+    margin: 20px 0;
+  }
+
+  p {
+      margin-left: 0;
+  }
+
+  .btns {
+    justify-content: space-around;
+  }
+}
+
+/* small screens */
+@media (min-width: 768px) {
+
+  nav {
+    justify-content: flex-end;
+  }
+
+  nav ul {
+    width: fit-content;
+  }
+
+  .container {
+    width: 90%;
+  }
+
+  .inner {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 1.5rem;
+  }
+
+  .btns {
+    
+    justify-content: unset;
+    gap: 10px
+  }
+
+  .btns button {
+    padding: 7px 25px;
+  }
+  .image {
+    margin: 30px 0;
+  }
+}
+
+/* meduim screens */
+@media (min-width: 992px) {
+
+  .inner {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .btns {
+    display: flex;
+    width: 100%;
+    justify-content: unset;
+    gap: 10px
+  }
+
+  .btns button {
+    padding: 5px 30px;
+  }
+
+  
+}
+
+/* large screens */
+@media (min-width: 1200px) {
+  .btns {
+    
+  }
+}
